@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f06d06;
+  color: rgb(20, 20, 20);
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #242124;
+  color: lavender;
+  padding: 10px 0;
+  line-height: 0.5;
+  /* Text-transform: ; */
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+#img-div {
+  display:block;
+  width: 90%;
+  margin: auto;
+}
+
+img {
+  width: 50%;
+  border-radius: 5%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+#img-caption {
+  color: rgb(230, 215, 235);
+}
+
+#tribute-info {
+  margin: 20px auto;
+  width: 90%;
+  display: block;
+} 
+
+h2 {
+  color: lavender;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 20px 20px 40px;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+ul p{
+  line-height: 22px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.education-para {
+  display: block;
+  width: 60%;
+  align-content: center;
+  margin: auto;
+
+}
+
+#tribute_link {
+  font-size: 1.2em;
+}
+
+#tribute_link a:hover {
+  color: lavender;
+  transition: 800ms ease-in-out;
+}
+
+footer {
+  background-color: #242124;
+  color: lavender;
+  height: 60px;
+}
+
+footer p{
+  font-size: 1.2em;
+  text-align: center;
+  /* padding: 1% 0; */
+  line-height: 3;
+}
+
+body {
+  animation-name: dropdown;
+  animation-duration: 3s;
+}
+
+#main {
+  animation: fadeIn 4s forwards;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(-2em)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header p {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  
+/*   #img-div #img {
+    max-width: 90%;
+    margin: 0 auto;
+  } */
+
+  #image {
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+  }
+
+  figcaption{
+    font-size: 9px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #tribute-info {
+    margin: 0;
+    ;
+  }
+  
+  h2 {
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  ul{
+    text-align: left;
+    margin: 0 0 0;
+  }
+  
+  footer p {
+    font-size: 0.8em;
+    line-height: 4;
+  }
+}
+
+@media (min-width: 530px) {
+  p {
+    font-size: 1rem;
+  }
+
+  #img-div #img {
+    min-width: 50%;
+  }
+}
